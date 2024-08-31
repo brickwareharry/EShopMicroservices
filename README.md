@@ -1,11 +1,16 @@
 # EShopMicroservices
 This document contains the notes and a draft documentation which includes some empty sections to be filled. It will gradually evolve into a further comprehensive documentation with a table of contents.
 
+## Note 1. .NET
 
-## Note 1. References for design basic
+What is ConfigureServices: https://github.com/brickwareharry/notes/blob/main/WhatIsConfigureServices.md
+What is Task:https://github.com/brickwareharry/notes/blob/main/WhatIsDotnetTask.md
+
+
+## Note 2. References for design basic
 Useful design basic: https://www.se.rit.edu/~swen-262/schedule/2238-2per.html
 
-## Note 2. Draft of Table of Contents for overall documentation
+## Note 3. Draft of Table of Contents for overall documentation
 
 reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 
