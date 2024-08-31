@@ -8,11 +8,15 @@ What is ConfigureServices: https://github.com/brickwareharry/notes/blob/main/Wha
 What is Task: https://github.com/brickwareharry/notes/blob/main/WhatIsDotnetTask.md
 
 ## Note 2. Creating Technical Journal
+
 Creating technical journal at github page: https://brickwareharry.github.io/harry-journal/
+
 Repository: https://github.com/brickwareharry/harry-journal
+
 Reference: https://chatgpt.com/share/31ccea5f-5194-4e4c-ba03-0a4726ac6cb6
 
 ## Note 3. References for design basic
+
 Useful design basic: https://www.se.rit.edu/~swen-262/schedule/2238-2per.html
 
 ## Note 4. Draft of Table of Contents for overall documentation
