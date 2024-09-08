@@ -2,9 +2,12 @@
 
 namespace BuildingBlocks.CQRS
 {
-    public interface ICommand : IRequest<Unit> 
+    //ICommand request does not return a response
+    public interface ICommand : ICommand<Unit> 
     { 
     }
+
+    //ICommand request returns a response
     public interface ICommand<out TResponse>: IRequest<TResponse>
     {
 

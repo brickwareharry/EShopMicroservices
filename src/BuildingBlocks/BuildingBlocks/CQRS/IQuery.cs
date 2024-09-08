@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BuildingBlocks.CQRS
 {
+    // IQuery request must return a response
     public interface IQuery<out TResponse> : IRequest<TResponse>
         where TResponse : notnull
     {

@@ -190,6 +190,14 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 
       Usage: see ...... EShopMicroservices\eshop-microservices\Services\Catalog\Catalog.API\Products\CreateProduct\CreateProductHandler.cs
 
+  - 11.1.4 Marten Library https://martendb.io/
+
+      Repository: https://github.com/JasperFx/marten
+
+      Marten is an ORM (Object-Relational Mapper) that leverages PostgreSQL's JSON capabilities. It is a powerful library that transforms PostgreSQL into a .NET Transactional Document DB. PostgreSQL's JSON column features, allowing us to store and query our data as JSON documents. It combines the flesibility of a document database with the reliability of relational PostgreSQL database. The services here use Marten for PostgreSQL interaction as a Document DB. 
+      
+      MartenDB leverages PostgreSQL not only as a document and event store but also as a relational database, allowing it to support complex relational data queries alongside its document-based capabilities. This enables users to perform SQL-style joins, indexing, and transactional consistency while managing both structured (relational) and unstructured (document) data within the same database, offering flexibility for various data models and workflows.
+
 
 - 11.2 Endpoint List
   | **Method**|**Request URI**|**Use Cases**|
