@@ -156,6 +156,14 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 
 ## 11. API Design Document
 - 11.1 Endpoint List
+  | **Method**|**Request URI**|**Use Cases**|
+    |-------|------|------|
+    | **GET**| /products| List all products |
+    | **GET**| /products/{id}| Get a specific product |
+    | **GET**| /products/category| Get products by category |
+    | **POST**| /products| Create a new product |
+    | **PUT**| /products/{id}| Update a product |
+    | **DELETE**| /products/{id}| Remove a product |
 - 11.2 Request/Response Formats
 - 11.3 Authentication and Authorization
 - 11.4 Error Handling
