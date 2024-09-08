@@ -172,7 +172,17 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 
       Usage: see ...... EShopMicroservices\eshop-microservices\Services\Catalog\Catalog.API\Products\CreateProduct\CreateProductEndpoint.cs
 
-  - 11.1.2 MediatR Library
+  - 11.1.2 Mapster Library  
+
+      Repository: https://github.com/MapsterMapper/Mapster    
+
+      Mapster is a flexible and lightweight object mapping library for .NET that simplifies the process of copying data between objects. It allows for easy configuration and supports advanced scenarios, such as mapping complex objects and lists, without requiring much boilerplate code.
+
+      Usage: see ...... EShopMicroservices\eshop-microservices\Services\Catalog\Catalog.API\Products\CreateProduct\CreateProductEndpoint.cs
+
+      For example: For CreateProductEndpoint.cs, Mapster converts the incoming CreateProductRequest in CreateProductEndpoint.cs from Cater library to the incoming CreateProductCommand in CreateProductCommandHandler.cs from MediatR library; and also converts the returning CreateProductResult in CreateProductCommandHandler.cs from MediatR library to ther returning CreateProductResponse in CreateProductEndpoint.cs from Cater library.
+
+  - 11.1.3 MediatR Library
 
       Repository: https://github.com/jbogard/MediatR
 
