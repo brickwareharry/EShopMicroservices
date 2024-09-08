@@ -163,7 +163,25 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 - 10.4 Usability Testing Reports
 
 ## 11. API Design Document
-- 11.1 Endpoint List
+- 11.1 Libraries
+  - 11.1.1 Carter Library
+
+      Repository: https://github.com/CarterCommunity/Carter
+
+      Carter is a lightweight, routing-focused library for building HTTP APIs in .NET, simplifying the development of minimal APIs by reducing boilerplate code. It integrates seamlessly with ASP.NET Core, allowing developers to define routes, middleware, and handlers in a more concise and readable manner.
+
+      Usage: see ...... EShopMicroservices\eshop-microservices\Services\Catalog\Catalog.API\Products\CreateProduct\CreateProductEndpoint.cs
+
+  - 11.1.2 MediatR Library
+
+      Repository: https://github.com/jbogard/MediatR
+
+      MediatR is a simple .NET library that implements the Mediator design pattern, allowing developers to reduce direct dependencies between objects by sending messages or requests between components through a mediator. It is often used in conjunction with the CQRS (Command Query Responsibility Segregation) pattern, which separates the responsibility for handling commands (actions that change state) and queries (actions that retrieve data). This combination promotes clean, maintainable, and testable architecture by decoupling sender and receiver logic while ensuring a clear separation of concerns between read and write operations.
+
+      Usage: see ...... EShopMicroservices\eshop-microservices\Services\Catalog\Catalog.API\Products\CreateProduct\CreateProductHandler.cs
+
+
+- 11.2 Endpoint List
   | **Method**|**Request URI**|**Use Cases**|
     |-------|------|------|
     | **GET**| /products| List all products |
@@ -172,9 +190,9 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
     | **POST**| /products| Create a new product |
     | **PUT**| /products/{id}| Update a product |
     | **DELETE**| /products/{id}| Remove a product |
-- 11.2 Request/Response Formats
-- 11.3 Authentication and Authorization
-- 11.4 Error Handling
+- 11.3 Request/Response Formats
+- 11.4 Authentication and Authorization
+- 11.5 Error Handling
 
 ## 12. Setup and Installation
 - 12.1 Environment Setup
