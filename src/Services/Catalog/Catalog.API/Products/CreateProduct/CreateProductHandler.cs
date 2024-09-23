@@ -15,7 +15,6 @@ namespace Catalog.API.Products.CreateProduct
         public async Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
         {
             // Create Product entity from command object
-
             var product = new Product
             { 
                 Name = command.Name,
@@ -25,8 +24,7 @@ namespace Catalog.API.Products.CreateProduct
                 Price = command.Price            
             };
 
-            //TODO:
-            // Save to database
+            // Save to database using the session of Marten library
             session.Store(product);
             await session.SaveChangesAsync(cancellationToken);
 
