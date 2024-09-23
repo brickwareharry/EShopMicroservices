@@ -9,7 +9,7 @@ namespace Catalog.API.Products.CreateProduct
     public record CreateProductCommand(string Name, List<string> Category, string Description, string ImageFile, decimal Price)
         :ICommand<CreateProductResult>; //ICommand inherites from IRequest of MediaR Library
     public record CreateProductResult(Guid Id);
-    internal class CreateProductCommandHandler(IDocumentSession session) 
+    internal class CreateProductCommandHandler(IDocumentSession session) // IDocumentSection is from dependency injection container of Marten Library for database operations
         : ICommandHandler<CreateProductCommand, CreateProductResult> //ICommandHandler interites from IRequestHandler of MediaR Library
     {// This is in business logic layer
         public async Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
