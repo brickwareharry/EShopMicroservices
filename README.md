@@ -215,12 +215,47 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 ## 12. Setup and Installation
 - 12.1 Environment Setup
 
-  - 12.1.1 Create PostgreSQL Database 
+  - 12.1.1 Create and Query PostgreSQL Database Container
 
     Run the following command at the local of dockercompose file in the terminal 
     ```console
       docker-compose up --build
     ```
+  - 12.1.2 Interact with PostgreSQL Database 
+
+    **Find Container Id:** Run the command below for next the step below
+    ```console
+      docker ps
+    ```
+    **Get into Container:** Run the command below (note: replace &lt;Container Id&gt; by the container Id obtained by the command above) for launching an interactive Bash shell session inside the running container of PostgreSQL Database
+    ```console
+      docker exec -it <Container Id> bash
+    ```
+
+    **Access PostgreSQL interactive terminal:** Run the command below
+    ```console
+      psql -U postgres
+    ```
+
+    **Displace All Databses:** Run the command below in PostgreSQL interactive terminal for displacing a table with information about all the databases on the server 
+    ```console
+      \l
+    ```
+
+    **Connect Database:** Run the command below in PostgreSQL interactive terminal for connecting the specific database (note: replace &lt;Database Name&gt; by the database name) . The name of database can be found in the command above by displacing all databases. 
+    ```console
+      \c <Database Name>
+    ```
+
+    **List Database Tables:** Run the command below in PostgreSQL interactive terminal for listing all the tables of the connected database
+    ```console
+      \d
+    ```
+    **Run SQL Query:** After the database is connected by the database connection command above, SQL queries can be run in the command line, for example: (note: replace &lt;Database Table&gt; by the database table name obtained from the command above)
+    ```console
+      SELECT * FROM <Database Table>;
+    ```    
+
 - 12.2 Installation Guide
 
 ## 13. Codebase Documentation
