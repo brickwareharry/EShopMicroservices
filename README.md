@@ -214,6 +214,13 @@ reference: https://chatgpt.com/share/865f6b93-e5c7-4094-8c04-44a58319364d
 
 ## 12. Setup and Installation
 - 12.1 Environment Setup
+
+  - 12.1.1 Create PostgreSQL Database 
+
+    Run the following command at the local of dockercompose file in the terminal 
+    ```console
+      docker-compose up --build
+    ```
 - 12.2 Installation Guide
 
 ## 13. Codebase Documentation
