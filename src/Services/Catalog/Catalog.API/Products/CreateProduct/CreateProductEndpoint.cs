@@ -20,7 +20,7 @@ namespace Catalog.API.Products.CreateProduct
                 //Send functoin of MediatR sends the command to the Handle function of CreateProductCommandHandler
                 var result = await sender.Send(command);
 
-                //using Adapt function of Mapster library maps the result of CreateProductResponse from Handle function back to CreateProductResponse above
+                //using Adapt function of Mapster library maps the result of CreateProductResult from Handle function back to CreateProductResponse above
                 var response = result.Adapt<CreateProductResponse>();
 
                 return Results.Created($"/products/{response.Id}", response);
